@@ -4,74 +4,124 @@
   <head>
     <title>Portfolio Site</title>
     <link href="main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="animation.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   </head>
 
   <body>
-    <div id="container">
 
-      <header class="draw-under-line">
-        <div id="title-area">
-          <a href="index.html"><h1>Portforio</h1></a>
+    <Header class="under--line">
+      <div class="Container">
+        <div id="header__title" class="forever--disable--link">
+          <a href="#">
+            <h1 class="vert--center">MIZUMA NAGI</h1>
+          </a>
         </div>
-        <div id="header-profile-area">
-          <div id="user-icon-area">
-            <img src="images/back_forcus_image.png">
-          </div>
-          <div class="external-link-area-front">
-            <span class="small-icon">
-              <img src="images/back_forcus_image.png">
-            </span>
-            <span class="status-info">
-              <p>: mizuma0929.work@gmail.com</p>
-            </span>
-          </div>
-          <div class="external-link-area-back">
-            <span class="small-icon">
-              <img src="images/back_forcus_image.png">
-            </span>
-            <span class="status-info">
-              <p>: https://github.com/MizumaNagi</p>
-            </span>
-          </div>
-          <!--<img src="images/back_forcus_image.png">-->
+        <div id="HeaderShortcutBlock">
+          <ul class="header__shortcut__item disable--link">
+            <!--<a href="javascript:void(0);" onclick="ScrollWindow('TestScroll');" class="right--line">-->
+            <a href="#section_aboutme" class="right--line">
+              <li>
+                <h4>AboutMe</h4>
+              </li>
+            </a>
+            <a href="#section_contents" class="right--line">
+              <li>
+                <h4>Contents</h4>
+              </li>
+            </a>
+            <a href="#section_skill" class="right--line">
+              <li>
+                <h4>Skill</h4>
+              </li>
+            </a>
+            <a href="#section_contact">
+              <li>
+                <h4>Contact</h4>
+              </li>
+            </a>
+          </ul>
         </div>
-      </header>
+      </div>
+    </Header>
 
-      <main class="draw-under-line">
-        <div id ="main-contents">
-        <h1><p>
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        </p></h1>
+    <Main>
+      <div id="section_aboutme" class="MainSectionBlock section__aboutme">
+        <div class="Container">
+          <div class="main__section__title">
+            <h2 class="large--under--line">About Me</h2>
+          </div>
+          <div class="main__section__content">
+            <h3>
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+            </h3>
+          </div>
         </div>
-      </main>
-
-      <footer>
-        <div id="contants-area">
-          <div class="contants-align-center">
+      </div>
+      <div id="section_contents" class="MainSectionBlock section__contents">
+        <div class="Container red">
+          <div class="main__section__title">
+            <h2 class="large--under--line">Contants</h2>
+          </div>
+          <div class="main__section__content">
             <ul>
-              <li class="list-item">
-                <a href="index.html"><h3>Home</h3></a>
-              </li>
-              <span class="draw-right-line"></span>
-              <li class="list-item">
-                <a href="about_me.html"><h3>About Me</h3></a>
-              </li>
-              <span class="draw-right-line"></span>
-              <li class="list-item">
-                <a href="contents.html"><h3>Contants</h3></a>
-              </li>
+              <li class="ContantBlock white"></li>
+              <li class="ContantBlock white"></li>
+              <li class="ContantBlock white"></li>
             </ul>
           </div>
         </div>
-      </footer>
+      </div>
+      <div id="section_skill" class="MainSectionBlock section__skill">
+        <div class="Container">
+          <div class="main__section__title">
+            <h2 class="large--under--line">Skill</h2>
+          </div>
+          <div class="main__section__content">
+            <h3>
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div id="section_contact" class="MainSectionBlock section__contact">
+        <div class="Container">
+          <div class="main__section__title">
+            <h2 class="large--under--line">Contact</h2>
+          </div>
+          <div class="main__section__content">
+            <h3>
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+              あああああああああああああああああああああああああ
+            </h3>
+          </div>
+        </div>
+      </div>
+    </Main>
 
-    </div>
+    <Footer id="TestScroll">
+      <div class="Container red">
+        <h4>Headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h4>
+      </div>
+    </Footer>
+
   </body>
   
 </html>

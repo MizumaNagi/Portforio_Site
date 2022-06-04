@@ -1,178 +1,174 @@
-/* iPhone */
+/*
+  margin: 外枠。要素間の隙間を空けるのに使用
+  border: 枠線。枠線のStyle指定&要素のサイズに追加される点に注意
+  padding: 余白。子要素の位置だけずらしたい際に使用?
+           こっちも要素のサイズに追加されるので注意
+*/
+
+/* スマホ */
 @media screen and (max-width: 767px) {
-  main {
-    height: 1000px;
-    background-color: yellow;
-  }
 }
 
 /* PC */
 @media screen and (min-width: 768px) {
-  main{
-    height: 2000px;
-    background-color: aqua;
-  }
 }
 
-#main-contents{
-  background-color: white;
-  height: auto;
-  width: 50%;
-}
-
+/* 既存スタイル */
 *{
   padding: 0px;
   margin: 0px;
-}
-
-h1{
-  font-size: 50px;
-}
-
-h2{
-  font-size: 40px;
-}
-
-h3{
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 12px;
-}
-
-p{
-  word-wrap: break-word;
-}
-
-.draw-under-line{
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: black;
-}
-
-body{
-  background-color: #d0d0d0;
-}
-
-#container{
+  border: 0px;
   width: 100%;
   height: 100%;
+}
+
+h1{ font-size: 68px; }
+h2{ font-size: 52px; }
+h3{ font-size: 38px; }
+h4{ font-size: 28px; }
+
+ul{
+  list-style-type: none;
+}
+
+/* オリジナルスタイル */
+.Container{
+  position: relative;
+  width: 1344px;
   margin: 0px auto;
 }
 
-header{
-  height: 100px;
-  background-color: #b0b0b0;
+.vert--center{
+  display: flex;
+  align-items: center;
 }
 
-header #title-area{
-  width: 250px;
-  height: 80px;
-  float: left;
-  padding: 10px 40px;
+.under--line{
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: black;
 }
 
-header #title-area a{
-  text-align: center;
+.large--under--line{
+  border-bottom: 6px;
+  border-style: solid;
+  border-color: black;
+}
+
+.right--line{
+  border-right: 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+.forever--disable--link a{
   text-decoration: none;
   color: black;
 }
 
-header #header-profile-area{
-  width: 400px;
-  height: 80px;
-  float: right;
-  padding: 10px 40px;
-}
-
-header #user-icon-area{
-  width: 80px;
-  height: 80px;
-  float: left;
-}
-
-header #user-icon-area img{
-  width: 80px;
-  height: auto;
-}
-
-header .external-link-area-front{
-  width: 310px;
-  height: 35px;
-  float: right;
-  padding: 0px 0px 5px 0px;
-}
-
-header .external-link-area-back {
-  width: 310px;
-  height: 35px;
-  float: right;
-  padding: 5px 0px 0px 0px;
-}
-
-header .small-icon{
-  width: 35px;
-  height: 35px;
-  float: left;
-}
-
-.small-icon img{
-  width: 35px;
-  height: 35px;
-}
-
-header .status-info{
-  width: 255px;
-  height: 25px;
-  float: left;
-  padding: 5px 10px;
-}
-
-.status-info p{
-  font-size: 15px;
-}
-
-/*
-main{
-  height: 930px;
-}
-*/
-
-footer{
-  height: 50px;
-  background-color: #909090;
-}
-
-footer #contants-area{
-  padding: 10px;
-  margin: auto;
-}
-
-footer #contants-area a{
-  text-decoration: underline;
+.disable--link a{
+  text-decoration: none;
   color: black;
 }
 
-footer .contants-align-center{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.disable--link a:hover{
+  text-decoration: underline;
+  color: gray;
 }
 
-footer .draw-right-line{
-  height: 30px;
-  float: left;
-  border-right: 2px;
-  border-right-style: dashed;
-  border-right-color: black;
-  list-style-type: none;
+.width--fit--resize{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-footer .list-item {
+.display--block{
+  display: block;
+}
+
+.red{background-color: red;}
+.blue{background-color: blue;}
+.green{background-color: green;}
+.cyan{background-color: cyan;}
+.magenta{background-color: magenta;}
+.yellow{background-color: yellow;}
+.black{background-color: black;}
+.white{background-color: white;}
+
+/* ヘッダー */
+Header{
+  height: 200px;
+  background-color: #CCCCCC;
+}
+
+#HeaderShortcutBlock{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  float: right;
   width: auto;
+  height: auto;
+}
+
+#HeaderShortcutBlock ul{
+  display: flex;
+}
+
+#header__title{
+  position: absolute;
+  left: 5px;
   float: left;
-  padding: 0px 30px;
-  list-style-type: none;
+  width: auto;
+}
+
+.header__shortcut__item li{
+  padding: 0px 10px 0px 10px;
+}
+
+/* メイン */
+Main{
+  height: auto;
+}
+
+.MainSectionBlock{
+  height: auto;
+  padding-top: 80px;
+}
+
+.ContantBlock{
+  height: 500px;
+  margin-left: 50px;
+  border: 4px solid black;
+}
+
+.section__aboutme{
+  background-color: #FFFFFF;
+}
+
+.section__contents{
+  background-color: #DDDDDD;
+}
+
+.section__skill{
+  background-color: #BBBBBB;
+}
+
+.section__contact{
+  background-color: #999999;
+}
+
+.main__section__title{
+  width: 600px;
+  margin: 0px auto 20px auto;
   text-align: center;
+}
+
+.main__section__content h3{
+  line-height: 2em;
+  white-space: pre-wrap;
+}
+
+/* フッター */
+Footer{
+  height: 50px;
+  background-color: #000000;
 }
