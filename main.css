@@ -13,6 +13,12 @@
 @media screen and (min-width: 768px) {
 }
 
+/* 変数 */
+:root{
+  --container-width: 1344px;
+  --header-height: 200px;
+}
+
 /* 既存スタイル */
 *{
   padding: 0px;
@@ -34,7 +40,7 @@ ul{
 /* オリジナルスタイル */
 .Container{
   position: relative;
-  width: 1344px;
+  width: var(--container-width);
   margin: 0px auto;
 }
 
@@ -43,8 +49,13 @@ ul{
   align-items: center;
 }
 
+.item--center{
+  display: grid;
+  place-items: center;
+}
+
 .under--line{
-  border-bottom: 1px;
+  border-bottom: 3px;
   border-style: solid;
   border-color: black;
 }
@@ -56,9 +67,18 @@ ul{
 }
 
 .right--line{
-  border-right: 3px;
+  border-right: 2px;
   border-style: solid;
   border-color: black;
+}
+
+.all--line{
+  border: 3px solid black;
+}
+
+.auto--new--line{
+  line-height: 2em;
+  white-space: pre-wrap;
 }
 
 .forever--disable--link a{
@@ -96,7 +116,7 @@ ul{
 
 /* ヘッダー */
 Header{
-  height: 200px;
+  height: var(--header-height);
   background-color: #CCCCCC;
 }
 
@@ -131,13 +151,42 @@ Main{
 
 .MainSectionBlock{
   height: auto;
-  padding-top: 80px;
+  margin: 0px auto;
+  padding: 50px 0px;
 }
 
-.ContantBlock{
-  height: 500px;
+.ContentBlock{
+  height: auto;
+  width: calc(100% - 100px);
+  padding: 50px 0px 100px 0px;
+  margin: 50px auto;
+}
+
+.ContentDetailListBlock{
+  width: 960px;
+  height: 450px;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
+
+.ContentDetailBlockS{
+  width: 405px;
+  height: 120px;
+  float: left;
+  margin: 20px 0px 0px 50px;
+}
+
+.ContentDetailBlockL {
+  width: 100%;
+  height: 120px;
+  float: left;
+  margin: 20px 0px 0px 50px;
+}
+
+.AllContentsPageLinkButtonBlock{
+  width: calc(100% - 100px);
+  height: 100px;
   margin-left: 50px;
-  border: 4px solid black;
 }
 
 .section__aboutme{
@@ -162,9 +211,33 @@ Main{
   text-align: center;
 }
 
-.main__section__content h3{
-  line-height: 2em;
-  white-space: pre-wrap;
+.content__game__name{
+  width: 300px;
+  margin: 0px auto 30px auto;
+  text-align: center;
+}
+
+.content__detail__image{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0px 0px 10px;
+  border-right: 3px;
+  border-style: solid;
+  border-color: gray;
+}
+
+.content__detail__text{
+  float: left;
+  width: auto;
+  height: 100%;
+  padding: 0px 0px 0px 20px;
+}
+
+.content__screenshot{
+  width: 960px;
+  height: 540px;
+  margin: 0px auto;
 }
 
 /* フッター */
