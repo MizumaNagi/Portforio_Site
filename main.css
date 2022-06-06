@@ -37,6 +37,11 @@ ul{
   list-style-type: none;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 /* オリジナルスタイル */
 .Container{
   position: relative;
@@ -47,6 +52,12 @@ ul{
 .vert--center{
   display: flex;
   align-items: center;
+}
+
+.text--center{
+  text-align: center;
+  white-space: pre-line;
+  line-height: 2em;
 }
 
 .item--center{
@@ -82,11 +93,6 @@ ul{
 }
 
 .forever--disable--link a{
-  text-decoration: none;
-  color: black;
-}
-
-.disable--link a{
   text-decoration: none;
   color: black;
 }
@@ -186,7 +192,7 @@ Main{
 .AllContentsPageLinkButtonBlock{
   width: calc(100% - 100px);
   height: 100px;
-  margin-left: 50px;
+  margin: 0px 0px 50px 50px;
 }
 
 .section__aboutme{
@@ -209,6 +215,10 @@ Main{
   width: 600px;
   margin: 0px auto 20px auto;
   text-align: center;
+}
+
+.main__section__content{
+  padding: 50px 0px;
 }
 
 .content__game__name{

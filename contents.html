@@ -1,34 +1,172 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>テストサイト</title>
-    <link href="main.css" rel="stylesheet" type="text/css">
-  </head>
 
-  <body>
-    <div id="container">
-      <header></header>
-      <main></main>
-      <footer>
-        <div id="contants-area">
-          <div class="contants-align-center">
-            <ul>
-              <li class="list-item">
-                <a href="index.html"><h3>Home</h3></a>
-              </li>
-              <span class="draw-right-line"></span>
-              <li class="list-item">
-                <h3>About Me</h3>
-              </li>
-              <span class="draw-right-line"></span>
-              <li class="list-item">
-                <h3>Contants</h3>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+<head>
+  <title>Portfolio Site</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="animation.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5">
+</head>
+
+<body>
+
+  <Header class="under--line">
+    <div class="Container">
+      <div id="header__title" class="forever--disable--link">
+        <a href="#">
+          <h1 class="vert--center">MIZUMA NAGI</h1>
+        </a>
+      </div>
+      <div id="HeaderShortcutBlock">
+        <ul class="header__shortcut__item disable--link">
+          <!--<a href="javascript:void(0);" onclick="ScrollWindow('TestScroll');" class="right--line">-->
+          <a href="#section_aboutme" class="right--line">
+            <li>
+              <h4>AboutMe</h4>
+            </li>
+          </a>
+          <a href="#section_contents" class="right--line">
+            <li>
+              <h4>Contents</h4>
+            </li>
+          </a>
+          <a href="#section_skill" class="right--line">
+            <li>
+              <h4>Skill</h4>
+            </li>
+          </a>
+          <a href="#section_contact">
+            <li>
+              <h4>Contact</h4>
+            </li>
+          </a>
+        </ul>
+      </div>
     </div>
-  </body>
-  
+  </Header>
+
+  <Main>
+    <div id="section_contents" class="MainSectionBlock section__contents">
+      <div class="Container">
+        <div class="main__section__title">
+          <h2 class="large--under--line">Contents</h2>
+        </div>
+        <div class="main__section__content">
+          <ul>
+            <li class="ContentBlock white all--line">
+              <h3 class="content__game__name under--line">マクラウォーズ</h3>
+              <ul class="ContentDetailListBlock">
+                <li class="ContentDetailBlockS">
+                  <img src="images/img_icon_watch.jpg" class="content__detail__image">
+                  <h3 class="content__detail__text vert--center">
+                    170 時間
+                  </h3>
+                </li>
+                <li class="ContentDetailBlockS">
+                  <img src="images/img_icon_human.jpg" class="content__detail__image">
+                  <h3 class="content__detail__text vert--center">
+                    16 人
+                  </h3>
+                </li>
+                <li class="ContentDetailBlockL">
+                  <img src="images/img_icon_explanation.jpg" class="content__detail__image">
+                  <h4 class="content__detail__text vert--center">
+                    修学旅行中の学生間で行われる対戦枕投げゲーム。<br>
+                    先生の目から逃れつつ、枕を相手に当て元気を削れ！
+                  </h4>
+                </li>
+                <li class="ContentDetailBlockL">
+                  <img src="images/img_icon_part.jpg" class="content__detail__image">
+                  <h4 class="content__detail__text vert--center">
+                    プレイヤー動作 / 敵AI管理<br>
+                    メインゲームシステム制作 / アイテム実装
+                  </h4>
+                </li>
+              </ul>
+              <div class="content__screenshot">
+                <img src="images/img_pillow_wars.png">
+              </div>
+            </li>
+            <li class="ContentBlock white all--line">
+              <h3 class="content__game__name under--line">物理将棋</h3>
+              <ul class="ContentDetailListBlock">
+                <li class="ContentDetailBlockS">
+                  <img src="images/img_icon_watch.jpg" class="content__detail__image">
+                  <h3 class="content__detail__text vert--center">
+                    230 時間
+                  </h3>
+                </li>
+                <li class="ContentDetailBlockS">
+                  <img src="images/img_icon_human.jpg" class="content__detail__image">
+                  <h3 class="content__detail__text vert--center">
+                    1 人
+                  </h3>
+                </li>
+                <li class="ContentDetailBlockL">
+                  <img src="images/img_icon_explanation.jpg" class="content__detail__image">
+                  <h4 class="content__detail__text vert--center">
+                    リアルタイム制のオンライン対戦将棋ゲーム。<br>
+                    独自のシステムである移動/召喚システムと<br>
+                    部分欠損システムが大きな特徴。
+                  </h4>
+                </li>
+                <li class="ContentDetailBlockL">
+                  <img src="images/img_icon_part.jpg" class="content__detail__image">
+                  <h4 class="content__detail__text vert--center">
+                    全て
+                  </h4>
+                </li>
+              </ul>
+              <div class="content__screenshot">
+                <img src="images/img_physics_syogi.png">
+              </div>
+            </li>
+            <li class="ContentBlock white all--line">
+              <h3 class="content__game__name under--line">物理将棋</h3>
+              <ul class="ContentDetailListBlock">
+                <li class="ContentDetailBlockS">
+                  <img src="images/img_icon_watch.jpg" class="content__detail__image">
+                  <h3 class="content__detail__text vert--center">
+                    230 時間
+                  </h3>
+                </li>
+                <li class="ContentDetailBlockS">
+                  <img src="images/img_icon_human.jpg" class="content__detail__image">
+                  <h3 class="content__detail__text vert--center">
+                    1 人
+                  </h3>
+                </li>
+                <li class="ContentDetailBlockL">
+                  <img src="images/img_icon_explanation.jpg" class="content__detail__image">
+                  <h4 class="content__detail__text vert--center">
+                    リアルタイム制のオンライン対戦将棋ゲーム。<br>
+                    独自のシステムである移動/召喚システムと<br>
+                    部分欠損システムが大きな特徴。
+                  </h4>
+                </li>
+                <li class="ContentDetailBlockL">
+                  <img src="images/img_icon_part.jpg" class="content__detail__image">
+                  <h4 class="content__detail__text vert--center">
+                    全て
+                  </h4>
+                </li>
+              </ul>
+              <div class="content__screenshot">
+                <img src="images/img_physics_syogi.png">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </Main>
+
+  <Footer id="TestScroll">
+    <div class="Container red">
+      <h4>Headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h4>
+    </div>
+  </Footer>
+
+</body>
+
 </html>
