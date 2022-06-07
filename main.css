@@ -123,7 +123,7 @@ a{
 /* ヘッダー */
 Header{
   height: var(--header-height);
-  background-color: #CCCCCC;
+  background-color: #FFFFFF;
 }
 
 #HeaderShortcutBlock{
@@ -195,19 +195,19 @@ Main{
   margin: 0px auto 25px auto;
 }
 
-.section__aboutme{
+.first__content__color{
   background-color: #FFFFFF;
 }
 
-.section__contents{
+.second__content__color{
   background-color: #DDDDDD;
 }
 
-.section__skill{
+.third__content__color{
   background-color: #BBBBBB;
 }
 
-.section__contact{
+.forth__content__color{
   background-color: #999999;
 }
 
