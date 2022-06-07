@@ -1,7 +1,7 @@
 /*
   margin: 外枠。要素間の隙間を空けるのに使用
   border: 枠線。枠線のStyle指定&要素のサイズに追加される点に注意
-  padding: 余白。子要素の位置だけずらしたい際に使用?
+  padding: 余白。コンテンツ内の要素にゆとりを持たせたいときに。
            こっちも要素のサイズに追加されるので注意
 */
 
@@ -57,6 +57,23 @@ a{
 .text--center{
   text-align: center;
   white-space: pre-line;
+}
+
+.text--left{
+  text-align: left;
+  white-space: pre-line;
+}
+
+.text--right{
+  text-align: right;
+  white-space: pre-line;
+}
+
+.small--line--height{
+  line-height: 1em;
+}
+
+.large--line--height{
   line-height: 2em;
 }
 
@@ -88,7 +105,6 @@ a{
 }
 
 .auto--new--line{
-  line-height: 2em;
   white-space: pre-wrap;
 }
 
@@ -231,6 +247,7 @@ Main{
   float: left;
   width: 50px;
   height: 50px;
+  padding-right: 5px;
   margin: 5px 0px 0px 5px;
   border-right: 2px;
   border-style: solid;
@@ -248,6 +265,35 @@ Main{
   width: 480px;
   height: 270px;
   margin: 0px auto;
+}
+
+.youtube{
+  position: relative;
+  width:100%;
+  height:0;
+  padding-top: 56.25%;
+  margin-top: 25px;
+}
+
+.youtube iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.test{
+  width: auto;
+  height: auto;
+}
+
+.left{
+  float: left;
+}
+
+.none{
+  float: none;
 }
 
 /* フッター */
