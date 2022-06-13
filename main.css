@@ -32,7 +32,7 @@ ul{
 
 dl{
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 120px 1fr;
   width: auto;
 }
 
@@ -331,6 +331,5 @@ Main{
 
 /* フッター */
 Footer{
-  height: 30px;
-  background-color: #000000;
+  height: 50px;
 }
