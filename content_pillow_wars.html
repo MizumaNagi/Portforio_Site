@@ -69,27 +69,38 @@
                 <dd>FPS</dd>
                 <dt class="right--line">ゲーム概要</dt>
                 <dd>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                  修学旅行中の学生間で行われる対戦枕投げゲーム。<br>
+                  相手に枕を当て体力を削る事で敵を脱落させる。<br>
+                  枕を投げ合うだけでは無く、アイテムが配置されたり<br>
+                  先生が見回りに来る際には布団に入り込み説教を免れたりと<br>
+                  様々な要素がある。
                 </dd>
                 <dt class="right--line">製作人数</dt>
-                <dd>XX 人</dd>
+                <dd>13 人</dd>
                 <dt class="right--line">製作期間</dt>
-                <dd>XXX 時間</dd>
+                <dd>210 時間</dd>
+                <dt class="right--line">使用ツール</dt>
+                <dd>
+                  Unity (2020.2.5f1) / SourceTree<br>
+                  Slack
+                </dd>
                 <dt class="right--line">担当箇所</dt>
                 <dd>
-                  AAAAAAAAAAAAAAA / AAAAAAAAAAAAAAA<br>
-                  AAAAAAAAAAAAAAA / AAAAAAAAAAAAAAA
+                  プレイヤー動作 / 敵AI管理<br>
+                  メインシステム全般 / アイテム実装
                 </dd>
-                <dt class="detail--last--content right--line">拘った点</dt>
+                <dt class="right--line">工夫した点</dt>
+                <dd>
+                  敵AIを実装する際に機械的な動きに見せたくない為<br>
+                  自身の状況に応じ行動パターンを変えるなどして<br>
+                  人間味あるAIに調整しました。
+                </dd>
+                <dt class="detail--last--content right--line">苦労した点</dt>
                 <dd class="detail--last--content">
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
-                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                  画面分割プレイ+ステージが狭くLOD実装が難しい為<br>
+                  レンダリング負荷が掛かりFPSを維持する事が困難だった点。<br>
+                  なるべくスクリプト側の処理をシンプルにし<br>
+                  ライティングの品質を下げる事でFPSを維持することに成功。
                 </dd>
               </dl>
             </h3>
