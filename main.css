@@ -23,8 +23,9 @@
 
 h1{ font-size: 34px; }
 h2{ font-size: 26px; }
-h3{ font-size: 19px; }
+h3{ font-size: 18px; }
 h4{ font-size: 14px; }
+p{font-size: 18px;}
 
 ul{
   list-style-type: none;
@@ -32,8 +33,17 @@ ul{
 
 dl{
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 110px 1fr;
   width: auto;
+}
+
+dl dt{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+dl dd{
+  font-size: 18px;
 }
 
 dt{
@@ -43,7 +53,7 @@ dt{
 
 dd{
   margin-left: 40px;
-  padding: 5px 0px 20px 0px;
+  padding: 6px 0px 20px 0px;
 }
 
 a{
