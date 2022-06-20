@@ -10,6 +10,7 @@
 :root{
   --container-width: 672px;
   --header-height: 100px;
+  --gauge: 0%;
 }
 
 /* 既存スタイル */
@@ -337,6 +338,46 @@ Main{
   padding-right: 10px;
   width: auto;
   float: left;
+}
+
+.SkillBlock {
+  width: 200px;
+  height: 250px;
+  float: left;
+  border: 1px black solid;
+  margin: 66px 0px 0px 66px;
+  position: relative;
+  box-shadow: 3px 3px 3px black;
+}
+
+.pie {
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+
+  background-image: radial-gradient(#f2f2f2 55%, transparent 56%), conic-gradient(#00ccff 0% var(--gauge), #d9d9d9 var(--gauge) 100%);
+  border-radius: 50%;
+}
+
+.IconImg {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+.SkillType {
+  width: 160px;
+  height: 30px;
+  padding: 10px 0px;
+  margin: 0px 20px;
+  border-top: 1px;
+  border-color: black;
+  border-style: solid;
+
+  font-size: 24px;
+  text-align: center;
 }
 
 /* フッター */
