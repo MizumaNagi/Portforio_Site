@@ -286,6 +286,7 @@ Main{
 
 .main__section__content{
   padding: 25px 0px;
+  overflow: hidden;
 }
 
 .content__game__name{
@@ -343,11 +344,12 @@ Main{
 .SkillBlock {
   width: 200px;
   height: 250px;
-  float: left;
   border: 1px black solid;
-  margin: 66px 0px 0px 66px;
+  margin: 30px 0px 0px 87px;
+  float: left;
   position: relative;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 3px 3px 3px gray;
+  background-color: white;
 }
 
 .pie {
@@ -378,6 +380,12 @@ Main{
 
   font-size: 24px;
   text-align: center;
+}
+
+.Hoge{
+  width: 200px;
+  height: 200px;
+  background-color: red;
 }
 
 /* フッター */
