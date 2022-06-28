@@ -1,3 +1,17 @@
+/* スマホ */
+@media screen and(max-width: 480px){
+  dl dd {
+    font-size: 16px;
+  }
+}
+
+/* スマホ以外 */
+@media screen and(min-width: 620px){
+  dl dd {
+    font-size: 18px;
+  }
+}
+
 /* 変数 */
 :root{
   --container-width: 672px;
@@ -33,10 +47,6 @@ dl{
 dl dt{
   font-size: 20px;
   font-weight: bold;
-}
-
-dl dd{
-  font-size: 18px;
 }
 
 dt{
