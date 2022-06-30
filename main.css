@@ -1,12 +1,23 @@
 /* スマホ */
-@media screen and(max-width: 480px){
+@media screen and (max-width: 375px){
+  dl dt {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
   dl dd {
     font-size: 16px;
+    word-break: break-all;
   }
 }
 
 /* スマホ以外 */
-@media screen and(min-width: 620px){
+@media screen and (min-width: 376px){
+  dl dt {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
   dl dd {
     font-size: 18px;
   }
@@ -40,13 +51,8 @@ ul{
 
 dl{
   display: grid;
-  grid-template-columns: 110px 1fr;
+  grid-template-columns: 110px 100%;
   width: auto;
-}
-
-dl dt{
-  font-size: 20px;
-  font-weight: bold;
 }
 
 dt{
@@ -64,22 +70,6 @@ a{
 }
 
 /* オリジナルスタイル */
-.p1{
-  font-size: 34px;
-  font-weight: 600;
-}
-.p2{
-  font-size: 26px;
-  font-weight: 600;
-}
-.p3{
-  font-size: 18px;
-  font-weight: 600;
-}
-.p4{
-  font-size: 14px;
-  font-weight: 600;
-}
 
 .Container{
   position: relative;
