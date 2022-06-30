@@ -52,7 +52,7 @@ ul{
 
 dl{
   display: grid;
-  grid-template-columns: 110px calc(100% - 110px);
+  grid-template-columns: 110px calc(100% - 130px);
   width: auto;
 }
 
